@@ -37,12 +37,12 @@ Par exemple, les 100 premières interactions protéine-protéine humaines dispon
 
 Numero de champ | Signification Biologique|
  --- | --- 
-1 | 
-2 |
-3 |
-4 |
-5 |
-6 |
+1 | identifiant unique pour A (nom défini dans UniProtKB ou RefSeq accession number)
+2 | identifiant unique pour B
+3 | Identifiants alternatifs pour A (par ex, le symbole officiel du gene)
+4 | Identifiants alternatifs pour B
+5 | Alias pour A (databaseName:identifier)
+6 | Alias pour B (databaseName:identifier)
 
 ##### Utiliser le PMID de la publication pour récuperer les lignes MITAB des interactions rapportées dans l'étude.
 Une librairie pratique pour manipuler des requêtes HTTP est [requests](https://requests.readthedocs.io/en/master/), eg:
