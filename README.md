@@ -61,7 +61,9 @@ ans = httpReq.text
 ##### Quelles techniques experimentales mesurent les interactions rapportées dans cette publication?
 
 ```
-
+2 techniques experimentales sont utilisées : 
+- Two hybrid
+- Pull down
 ```
 
 ##### Proposer deux expressions régulières et les champs auxquels les appliquer pour
@@ -87,13 +89,13 @@ ans = httpReq.text
 ##### Combien de protéines EBV sont impliquées et pour combien d'interactions EBV/EBV?
 
 ```
-
+59 interactions EBV/EBV
 ```
 
 ##### Combien de protéines humaines sont impliquées et pour combien d'interactions EBV/Human?
 
 ```
-
+173 interactions EBV/Human
 ```
 
 ###### Pour la suite du travail assurez-vous d'avoir les deux jeux de données MITAB suivants
