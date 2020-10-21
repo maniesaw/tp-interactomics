@@ -89,13 +89,13 @@ ans = httpReq.text
 ##### Combien de protéines EBV sont impliquées et pour combien d'interactions EBV/EBV?
 
 ```
-
+59 interactions EBV/EBV
 ```
 
 ##### Combien de protéines humaines sont impliquées et pour combien d'interactions EBV/Human?
 
 ```
-
+173 interactions EBV/Human
 ```
 
 ###### Pour la suite du travail assurez-vous d'avoir les deux jeux de données MITAB suivants
