@@ -44,7 +44,7 @@ Numero de champ | Signification Biologique|
 5 | Alias pour A (databaseName:identifier)
 6 | Alias pour B (databaseName:identifier)
 
-##### Utiliser le PMID de la publication pour récuperer les lignes MITAB des interactions rapportées dans l'étude.
+##### Utiliser le PMID (identifiant unique de la publi) de la publication pour récuperer les lignes MITAB des interactions rapportées dans l'étude.
 Une librairie pratique pour manipuler des requêtes HTTP est [requests](https://requests.readthedocs.io/en/master/), eg:
 
 ```python
