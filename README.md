@@ -64,6 +64,9 @@ ans = httpReq.text
 2 techniques experimentales sont utilisées : 
 - Two hybrid
 - Pull down
+
+Set_method = [i[6] for i in Ans_Uniprot]
+set(Set_method)
 ```
 
 ##### Proposer deux expressions régulières et les champs auxquels les appliquer pour
@@ -71,18 +74,33 @@ ans = httpReq.text
 * Ne retenir que les lignes MITAB dans lesquelles chaque interactant possède un identifiant UNIPROT
 
 ```
-
+Ans_Uniprot = [ i for i in Ans_Matrix if i[0][0:5]=="unipr" and i[1][0:5]=="unipr" ]
+Ans_Uniprot
+len(Ans_Uniprot)
 ```
 
 * Extraire les lignes MITAB impliquant uniquement des protéines d'EBV
 
 ```
-
+Ans_EBV = [ i for i in Ans_Uniprot if (i[9].split("(")[1].split(")")[0][0:3] =="ebv" and i[10].split("(")[1].split(")")[0][0:3]=="ebv") ]
+Ans_EBV
+len(Ans_EBV)
 ```
 
 * Extraire les lignes MITAB impliquant des protéines humaines et des protéines d'EBV 
 
 ```
+Ans_EBV_Human_And = [ i for i in Ans_Uniprot if (i[9].split("(")[1].split(")")[0][0:3] =="hum" and i[10].split("(")[1].split(")")[0][0:3]=="hum") ]
+Ans_EBV_Human_And
+len(Ans_EBV_Human_And)
+
+On verifie que le AND est vide.
+
+On récupere le OU.
+
+Ans_EBV_Human = [ i for i in Ans_Uniprot if (i[9].split("(")[1].split(")")[0][0:3] =="hum" or i[10].split("(")[1].split(")")[0][0:3]=="hum") ]
+Ans_EBV_Human
+len(Ans_EBV_Human)
 
 ```
 
@@ -95,7 +113,7 @@ ans = httpReq.text
 ##### Combien de protéines humaines sont impliquées et pour combien d'interactions EBV/Human?
 
 ```
-173 interactions EBV/Human
+171 interactions EBV/Human
 ```
 
 ###### Pour la suite du travail assurez-vous d'avoir les deux jeux de données MITAB suivants
