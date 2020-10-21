@@ -61,7 +61,9 @@ ans = httpReq.text
 ##### Quelles techniques experimentales mesurent les interactions rapportées dans cette publication?
 
 ```
-
+2 techniques experimentales sont utilisées : 
+- Two hybrid
+- Pull down
 ```
 
 ##### Proposer deux expressions régulières et les champs auxquels les appliquer pour
